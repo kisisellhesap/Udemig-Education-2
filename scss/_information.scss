@@ -1,0 +1,53 @@
+@import "./general_variables";
+
+.information-wrapper {
+  @extend %container-fluid;
+  .information-container {
+    @extend %container;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: space-between;
+    row-gap: 1rem;
+    .information-card {
+      @extend %d-flex-column;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      width: 90%;
+
+      &:hover {
+        animation: headShake;
+        animation-duration: 1s;
+      }
+      .img-div {
+        min-height: 200px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 100%;
+        }
+      }
+
+      p {
+        color: $white;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .information-wrapper {
+    .information-container {
+      .information-card {
+        width: 100%;
+        .img-div {
+          height: 200px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

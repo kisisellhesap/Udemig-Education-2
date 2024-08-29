@@ -1,0 +1,62 @@
+@import "./general_variables";
+
+.about-us-wrapper {
+  @extend %container-fluid;
+  .about-us-container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+
+    gap: 3rem;
+    img {
+      width: 100%;
+      max-height: 350px;
+      max-width: 400px;
+      min-width: 350px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .about-us-info {
+      @extend %d-flex-column;
+      gap: 1.5rem;
+
+      width: 40%;
+
+      h5 {
+        color: $orange;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+      }
+      h2 {
+        @extend %h2-settings;
+      }
+      p {
+        color: $gray;
+        line-height: 2rem;
+      }
+
+      .btn {
+        @extend %default-btn;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-us-wrapper {
+    .about-us-container {
+      flex-direction: column;
+      img {
+        max-width: none !important;
+        width: 100%;
+        min-width: 0 !important;
+      }
+      .about-us-info {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+}

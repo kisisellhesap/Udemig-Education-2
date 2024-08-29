@@ -1,0 +1,45 @@
+@import "./general_variables";
+
+.home-wrapper {
+  @extend %d-flex-align-jusfity-center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/group.jpeg");
+
+  background-size: cover;
+  background-position: bottom;
+
+  .home-container {
+    @extend %container, %d-flex-column;
+    gap: 1rem;
+
+    animation: lightSpeedInLeft;
+    animation-duration: 2s;
+    span {
+      font-size: 1.3rem;
+      color: $orange;
+      font-family: $Poppins-Family;
+      letter-spacing: 3px;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 5.5rem;
+      font-weight: 800;
+      color: $white;
+      font-family: $Poppins-Family;
+      line-height: 7rem;
+    }
+    p {
+      color: $gray;
+      font-weight: 600;
+    }
+    button {
+      @extend %default-btn;
+      margin-top: 1.5rem;
+    }
+  }
+}

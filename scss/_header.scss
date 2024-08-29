@@ -1,0 +1,150 @@
+@import "./general_variables";
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 1.8rem 0rem;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid $orange;
+
+  .header-container {
+    @extend %d-flex-row-space-between, %container;
+    width: 100% !important;
+
+    .logo {
+      text-decoration: none;
+      color: $orange;
+      font-size: 2rem;
+      font-weight: 700;
+      span {
+        font-size: 2rem;
+        color: $white;
+      }
+    }
+    .active-res {
+      transform: translate(0px, 0px);
+
+      animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 0.4s; /* don't forget to set a duration! */
+    }
+
+    nav {
+      @extend %d-flex-row-space-between;
+      width: 67%;
+      min-width: 808px;
+      transition: all 0.4s ease;
+
+      .list-nav {
+        @extend %d-flex-row-align-item-center;
+        gap: 2.7rem;
+
+        a {
+          text-decoration: none;
+          color: $white;
+          text-transform: uppercase;
+          font-weight: 600;
+          transition: all 0.4s ease;
+          white-space: nowrap;
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+
+      .social-nav {
+        @extend %d-flex-row-align-item-center;
+        gap: 1.5rem;
+        color: $white;
+        margin-left: 2rem;
+
+        * {
+          transition: all 0.4s ease;
+          &:hover {
+            transform: translateY(-5px);
+            color: $orange;
+            cursor: pointer;
+          }
+        }
+        span {
+          font-size: 1.1rem;
+          white-space: nowrap;
+        }
+
+        i {
+          font-size: 1.3rem;
+        }
+        #close-res-nav {
+          display: none;
+        }
+      }
+    }
+
+    #open-res-nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  header {
+    position: static;
+    .header-container {
+      nav {
+        padding: 1.5rem;
+        width: 50%;
+        min-height: 100vh;
+        min-width: 220px;
+        max-width: 300px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 111;
+        transform: translate(500px, 0px);
+        background: rgb(255, 163, 67);
+        background: linear-gradient(
+          31deg,
+          rgba(255, 163, 67, 0.9360994397759104) 29%,
+          rgba(0, 0, 0, 0.9360994397759104) 29%
+        );
+        flex-direction: column;
+        .list-nav {
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 3rem 0rem;
+        }
+        .social-nav {
+          align-items: start;
+          margin-left: 0 !important;
+
+          * {
+            color: $black;
+            &:hover {
+              color: $white;
+            }
+          }
+
+          #close-res-nav {
+            display: block;
+            font-size: 2rem;
+            color: $white;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 3rem;
+          }
+        }
+      }
+
+      #open-res-nav {
+        display: block;
+        font-size: 1.5rem;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}

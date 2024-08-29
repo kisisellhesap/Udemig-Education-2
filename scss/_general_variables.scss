@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Color
+
+$orange: #ffa343;
+$white: #ffffff;
+$gray: #cbcbc2;
+$black: #000000;
+
+// Font Family
+
+$Open-Sans-Family: "Open Sans", sans-serif;
+$Poppins-Family: "Poppins", sans-serif;
+
+// Default Css
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $Open-Sans-Family;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 500vh;
+  background-color: $black;
+}
+
+%d-flex-row-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%d-flex-row-align-item-center {
+  display: flex;
+  align-items: center;
+}
+
+%d-flex-align-jusfity-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%default-btn {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid $orange;
+  transition: all 0.4s ease;
+
+  &:hover {
+    border: 2px solid $white;
+    background-color: transparent;
+    color: $white;
+  }
+}
+
+%container-fluid {
+  padding: 7rem 0rem;
+}
+
+%container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+  // background-color: red;
+}
+
+%gray-paraf {
+  color: $gray;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+%h2-settings {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: $Poppins-Family;
+  color: $white;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  %container-fluid {
+    padding: 4rem 0rem;
+  }
+
+  %container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  %container {
+    width: 90%;
+
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}

@@ -1,0 +1,82 @@
+@import "./general_variables";
+
+.courses-wrapper {
+  @extend %container-fluid;
+  .courses-container {
+    @extend %container, %d-flex-column;
+    gap: 4rem;
+    align-items: center;
+
+    h2 {
+      @extend %h2-settings;
+      text-align: center;
+    }
+
+    .courses-cards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(228px, auto));
+      gap: 1.5rem;
+      .courses-card {
+        position: relative;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 8px;
+
+        &:hover img {
+          animation: heartBeat;
+          animation-duration: 1s;
+        }
+        img {
+          border-radius: 8px;
+          width: 100%;
+          height: 100%;
+
+          object-fit: cover;
+        }
+        .courses-card-info-wrapper {
+          @extend %d-flex-column;
+          gap: 0.5rem;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 1.5rem;
+          background-color: rgba($color: $black, $alpha: 0.3);
+          justify-content: flex-end;
+          .courses-card-info-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            i {
+              color: $orange;
+            }
+            p {
+              color: $white;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .btn {
+      @extend %default-btn;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .courses-card {
+    // position: relative;
+
+    // img {
+    //   border-radius: 8px;
+    //   width: 100%;
+    //   height: 100%;
+
+    //   object-fit: cover;
+    // }
+  }
+}

@@ -1,0 +1,1136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+  background-color: #000000;
+}
+
+header .header-container nav, header .header-container, .footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container nav .social-nav, header .header-container nav .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-wrapper .home-container, .information-wrapper .information-container .information-card, .about-us-wrapper .about-us-container .about-us-info, .courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper, .courses-wrapper .courses-container, .contact-wrapper .contact-container .contact-form-info .form-item, .contact-wrapper .contact-container .contact-form-info, .footer-wrapper .footer-container .footer-list .footer-list-body, .footer-wrapper .footer-container .footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-wrapper .home-container button, .about-us-wrapper .about-us-container .about-us-info .btn, .courses-wrapper .courses-container .btn {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #ffa343;
+  transition: all 0.4s ease;
+}
+.home-wrapper .home-container button:hover, .about-us-wrapper .about-us-container .about-us-info .btn:hover, .courses-wrapper .courses-container .btn:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.information-wrapper, .about-us-wrapper, .courses-wrapper, .contact-wrapper, .footer-wrapper {
+  padding: 7rem 0rem;
+}
+
+header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .contact-wrapper .contact-container, .footer-wrapper .footer-container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+}
+
+.about-us-wrapper .about-us-container .about-us-info h2, .courses-wrapper .courses-container h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .information-wrapper, .about-us-wrapper, .courses-wrapper, .contact-wrapper, .footer-wrapper {
+    padding: 4rem 0rem;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .contact-wrapper .contact-container, .footer-wrapper .footer-container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .contact-wrapper .contact-container, .footer-wrapper .footer-container {
+    width: 90%;
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}
+.footer-wrapper .footer-container {
+  width: 90% !important;
+  align-items: flex-start !important;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-wrapper .footer-container .footer-list {
+  gap: 1rem;
+}
+.footer-wrapper .footer-container .footer-list h5 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.footer-wrapper .footer-container .footer-list .footer-list-body {
+  gap: 0.5rem;
+}
+.footer-wrapper .footer-container .footer-list .footer-list-body a {
+  color: #cbcbc2;
+  text-decoration: none;
+}
+.footer-wrapper .footer-container .footer-list .footer-list-body a:hover {
+  color: #ffffff;
+}
+.footer-wrapper .footer-container .footer-list .footer-list-body-icon {
+  display: flex;
+  gap: 1rem;
+}
+.footer-wrapper .footer-container .footer-list .footer-list-body-icon i {
+  color: #ffffff;
+  font-size: 1.3rem;
+  background-color: #212121;
+  border-radius: 100%;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.footer-wrapper .footer-container .footer-list .footer-list-body-icon i:hover {
+  background-color: #ffa343;
+  color: #000000;
+}
+
+@media screen and (max-width: 765px) {
+  .footer-wrapper .footer-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+  background-color: #000000;
+}
+
+header .header-container nav, header .header-container, .footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container nav .social-nav, header .header-container nav .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-wrapper .home-container, .information-wrapper .information-container .information-card, .about-us-wrapper .about-us-container .about-us-info, .courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper, .courses-wrapper .courses-container, .contact-wrapper .contact-container .contact-form-info .form-item, .contact-wrapper .contact-container .contact-form-info, .footer-wrapper .footer-container .footer-list, .footer-wrapper .footer-container .footer-list .footer-list-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-wrapper .home-container button, .about-us-wrapper .about-us-container .about-us-info .btn, .courses-wrapper .courses-container .btn {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #ffa343;
+  transition: all 0.4s ease;
+}
+.home-wrapper .home-container button:hover, .about-us-wrapper .about-us-container .about-us-info .btn:hover, .courses-wrapper .courses-container .btn:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.information-wrapper, .about-us-wrapper, .courses-wrapper, .contact-wrapper, .footer-wrapper {
+  padding: 7rem 0rem;
+}
+
+header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .contact-wrapper .contact-container, .footer-wrapper .footer-container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+}
+
+.about-us-wrapper .about-us-container .about-us-info h2, .courses-wrapper .courses-container h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .information-wrapper, .about-us-wrapper, .courses-wrapper, .contact-wrapper, .footer-wrapper {
+    padding: 4rem 0rem;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .contact-wrapper .contact-container, .footer-wrapper .footer-container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .contact-wrapper .contact-container, .footer-wrapper .footer-container {
+    width: 90%;
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}
+.contact-wrapper .contact-container {
+  width: 90% !important;
+  display: flex;
+  gap: 2rem;
+}
+.contact-wrapper .contact-container img {
+  width: 50%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact-wrapper .contact-container .contact-form-info {
+  width: 50%;
+  gap: 1rem;
+}
+.contact-wrapper .contact-container .contact-form-info .form-item {
+  gap: 0.5rem;
+}
+.contact-wrapper .contact-container .contact-form-info .form-item label {
+  color: #ffffff;
+  width: -moz-max-content;
+  width: max-content;
+}
+.contact-wrapper .contact-container .contact-form-info .form-item input,
+.contact-wrapper .contact-container .contact-form-info .form-item textarea {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  resize: none;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-wrapper .contact-container {
+    width: 70% !important;
+    flex-direction: column;
+  }
+  .contact-wrapper .contact-container img {
+    width: 100% !important;
+  }
+  .contact-wrapper .contact-container .contact-form-info {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 465px) {
+  .contact-wrapper .contact-container {
+    width: 90% !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+  background-color: #000000;
+}
+
+header .header-container nav, header .header-container, .footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container nav .social-nav, header .header-container nav .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-wrapper .home-container, .information-wrapper .information-container .information-card, .about-us-wrapper .about-us-container .about-us-info, .courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper, .courses-wrapper .courses-container, .footer-wrapper .footer-container .footer-list, .footer-wrapper .footer-container .footer-list .footer-list-body, .contact-wrapper .contact-container .contact-form-info, .contact-wrapper .contact-container .contact-form-info .form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-wrapper .home-container button, .about-us-wrapper .about-us-container .about-us-info .btn, .courses-wrapper .courses-container .btn {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #ffa343;
+  transition: all 0.4s ease;
+}
+.home-wrapper .home-container button:hover, .about-us-wrapper .about-us-container .about-us-info .btn:hover, .courses-wrapper .courses-container .btn:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.information-wrapper, .about-us-wrapper, .courses-wrapper, .footer-wrapper, .contact-wrapper {
+  padding: 7rem 0rem;
+}
+
+header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+}
+
+.about-us-wrapper .about-us-container .about-us-info h2, .courses-wrapper .courses-container h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .information-wrapper, .about-us-wrapper, .courses-wrapper, .footer-wrapper, .contact-wrapper {
+    padding: 4rem 0rem;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .courses-wrapper .courses-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container {
+    width: 90%;
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}
+.courses-wrapper .courses-container {
+  gap: 4rem;
+  align-items: center;
+}
+.courses-wrapper .courses-container h2 {
+  text-align: center;
+}
+.courses-wrapper .courses-container .courses-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(228px, auto));
+  gap: 1.5rem;
+}
+.courses-wrapper .courses-container .courses-cards .courses-card {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.courses-wrapper .courses-container .courses-cards .courses-card:hover img {
+  animation: heartBeat;
+  animation-duration: 1s;
+}
+.courses-wrapper .courses-container .courses-cards .courses-card img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper {
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+}
+.courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper .courses-card-info-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper .courses-card-info-container i {
+  color: #ffa343;
+}
+.courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper .courses-card-info-container p {
+  color: #ffffff;
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+  background-color: #000000;
+}
+
+header .header-container nav, header .header-container, .footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container nav .social-nav, header .header-container nav .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-wrapper .home-container, .information-wrapper .information-container .information-card, .about-us-wrapper .about-us-container .about-us-info, .footer-wrapper .footer-container .footer-list, .footer-wrapper .footer-container .footer-list .footer-list-body, .contact-wrapper .contact-container .contact-form-info, .contact-wrapper .contact-container .contact-form-info .form-item, .courses-wrapper .courses-container, .courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-wrapper .home-container button, .about-us-wrapper .about-us-container .about-us-info .btn, .courses-wrapper .courses-container .btn {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #ffa343;
+  transition: all 0.4s ease;
+}
+.home-wrapper .home-container button:hover, .about-us-wrapper .about-us-container .about-us-info .btn:hover, .courses-wrapper .courses-container .btn:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.information-wrapper, .about-us-wrapper, .footer-wrapper, .contact-wrapper, .courses-wrapper {
+  padding: 7rem 0rem;
+}
+
+header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+}
+
+.about-us-wrapper .about-us-container .about-us-info h2, .courses-wrapper .courses-container h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .information-wrapper, .about-us-wrapper, .footer-wrapper, .contact-wrapper, .courses-wrapper {
+    padding: 4rem 0rem;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .about-us-wrapper .about-us-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container {
+    width: 90%;
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}
+.about-us-wrapper .about-us-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.about-us-wrapper .about-us-container img {
+  width: 100%;
+  max-height: 350px;
+  max-width: 400px;
+  min-width: 350px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us-wrapper .about-us-container .about-us-info {
+  gap: 1.5rem;
+  width: 40%;
+}
+.about-us-wrapper .about-us-container .about-us-info h5 {
+  color: #ffa343;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.about-us-wrapper .about-us-container .about-us-info p {
+  color: #cbcbc2;
+  line-height: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .about-us-wrapper .about-us-container {
+    flex-direction: column;
+  }
+  .about-us-wrapper .about-us-container img {
+    max-width: none !important;
+    width: 100%;
+    min-width: 0 !important;
+  }
+  .about-us-wrapper .about-us-container .about-us-info {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+  background-color: #000000;
+}
+
+header .header-container nav, header .header-container, .footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container nav .social-nav, header .header-container nav .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-wrapper .home-container, .information-wrapper .information-container .information-card, .footer-wrapper .footer-container .footer-list, .footer-wrapper .footer-container .footer-list .footer-list-body, .contact-wrapper .contact-container .contact-form-info, .contact-wrapper .contact-container .contact-form-info .form-item, .courses-wrapper .courses-container, .courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper, .about-us-wrapper .about-us-container .about-us-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-wrapper .home-container button, .courses-wrapper .courses-container .btn, .about-us-wrapper .about-us-container .about-us-info .btn {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #ffa343;
+  transition: all 0.4s ease;
+}
+.home-wrapper .home-container button:hover, .courses-wrapper .courses-container .btn:hover, .about-us-wrapper .about-us-container .about-us-info .btn:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.information-wrapper, .footer-wrapper, .contact-wrapper, .courses-wrapper, .about-us-wrapper {
+  padding: 7rem 0rem;
+}
+
+header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+}
+
+.courses-wrapper .courses-container h2, .about-us-wrapper .about-us-container .about-us-info h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .information-wrapper, .footer-wrapper, .contact-wrapper, .courses-wrapper, .about-us-wrapper {
+    padding: 4rem 0rem;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  header .header-container, .home-wrapper .home-container, .information-wrapper .information-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container {
+    width: 90%;
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}
+.information-wrapper .information-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+.information-wrapper .information-container .information-card {
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  width: 90%;
+}
+.information-wrapper .information-container .information-card:hover {
+  animation: headShake;
+  animation-duration: 1s;
+}
+.information-wrapper .information-container .information-card .img-div {
+  min-height: 200px;
+}
+.information-wrapper .information-container .information-card .img-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 100%;
+}
+.information-wrapper .information-container .information-card p {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 465px) {
+  .information-wrapper .information-container .information-card {
+    width: 100%;
+  }
+  .information-wrapper .information-container .information-card .img-div {
+    height: 200px;
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+  background-color: #000000;
+}
+
+header .header-container nav, header .header-container, .footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container nav .social-nav, header .header-container nav .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-wrapper .home-container, .footer-wrapper .footer-container .footer-list, .footer-wrapper .footer-container .footer-list .footer-list-body, .contact-wrapper .contact-container .contact-form-info, .contact-wrapper .contact-container .contact-form-info .form-item, .courses-wrapper .courses-container, .courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper, .about-us-wrapper .about-us-container .about-us-info, .information-wrapper .information-container .information-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-wrapper .home-container button, .courses-wrapper .courses-container .btn, .about-us-wrapper .about-us-container .about-us-info .btn {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #ffa343;
+  transition: all 0.4s ease;
+}
+.home-wrapper .home-container button:hover, .courses-wrapper .courses-container .btn:hover, .about-us-wrapper .about-us-container .about-us-info .btn:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.footer-wrapper, .contact-wrapper, .courses-wrapper, .about-us-wrapper, .information-wrapper {
+  padding: 7rem 0rem;
+}
+
+header .header-container, .home-wrapper .home-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container, .information-wrapper .information-container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+}
+
+.courses-wrapper .courses-container h2, .about-us-wrapper .about-us-container .about-us-info h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .footer-wrapper, .contact-wrapper, .courses-wrapper, .about-us-wrapper, .information-wrapper {
+    padding: 4rem 0rem;
+  }
+  header .header-container, .home-wrapper .home-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container, .information-wrapper .information-container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  header .header-container, .home-wrapper .home-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container, .information-wrapper .information-container {
+    width: 90%;
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}
+.home-wrapper {
+  min-height: 100vh;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/group.jpeg");
+  background-size: cover;
+  background-position: bottom;
+}
+.home-wrapper .home-container {
+  gap: 1rem;
+  animation: lightSpeedInLeft;
+  animation-duration: 2s;
+}
+.home-wrapper .home-container span {
+  font-size: 1.3rem;
+  color: #ffa343;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.home-wrapper .home-container h1 {
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  line-height: 7rem;
+}
+.home-wrapper .home-container p {
+  color: #cbcbc2;
+  font-weight: 600;
+}
+.home-wrapper .home-container button {
+  margin-top: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+  background-color: #000000;
+}
+
+header .header-container nav, header .header-container, .footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container nav .social-nav, header .header-container nav .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-wrapper .footer-container .footer-list, .footer-wrapper .footer-container .footer-list .footer-list-body, .contact-wrapper .contact-container .contact-form-info, .contact-wrapper .contact-container .contact-form-info .form-item, .courses-wrapper .courses-container, .courses-wrapper .courses-container .courses-cards .courses-card .courses-card-info-wrapper, .about-us-wrapper .about-us-container .about-us-info, .information-wrapper .information-container .information-card, .home-wrapper .home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-wrapper .courses-container .btn, .about-us-wrapper .about-us-container .about-us-info .btn, .home-wrapper .home-container button {
+  outline: none;
+  border: none;
+  background-color: #ffa343;
+  color: #000000;
+  border-radius: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem 2.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #ffa343;
+  transition: all 0.4s ease;
+}
+.courses-wrapper .courses-container .btn:hover, .about-us-wrapper .about-us-container .about-us-info .btn:hover, .home-wrapper .home-container button:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.footer-wrapper, .contact-wrapper, .courses-wrapper, .about-us-wrapper, .information-wrapper {
+  padding: 7rem 0rem;
+}
+
+header .header-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container, .information-wrapper .information-container, .home-wrapper .home-container {
+  width: 70%;
+  margin: auto;
+  min-width: 810px;
+  padding: 0rem 2.5rem;
+}
+
+.courses-wrapper .courses-container h2, .about-us-wrapper .about-us-container .about-us-info h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .footer-wrapper, .contact-wrapper, .courses-wrapper, .about-us-wrapper, .information-wrapper {
+    padding: 4rem 0rem;
+  }
+  header .header-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container, .information-wrapper .information-container, .home-wrapper .home-container {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+    padding: 0rem 2.5rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  header .header-container, .footer-wrapper .footer-container, .contact-wrapper .contact-container, .courses-wrapper .courses-container, .about-us-wrapper .about-us-container, .information-wrapper .information-container, .home-wrapper .home-container {
+    width: 90%;
+    min-width: 290px;
+    padding: 0rem !important;
+  }
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 1.8rem 0rem;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #ffa343;
+}
+header .header-container {
+  width: 100% !important;
+}
+header .header-container .logo {
+  text-decoration: none;
+  color: #ffa343;
+  font-size: 2rem;
+  font-weight: 700;
+}
+header .header-container .logo span {
+  font-size: 2rem;
+  color: #ffffff;
+}
+header .header-container .active-res {
+  transform: translate(0px, 0px);
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.4s; /* don't forget to set a duration! */
+}
+header .header-container nav {
+  width: 67%;
+  min-width: 808px;
+  transition: all 0.4s ease;
+}
+header .header-container nav .list-nav {
+  gap: 2.7rem;
+}
+header .header-container nav .list-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  white-space: nowrap;
+}
+header .header-container nav .list-nav a:hover {
+  color: #ffa343;
+}
+header .header-container nav .social-nav {
+  gap: 1.5rem;
+  color: #ffffff;
+  margin-left: 2rem;
+}
+header .header-container nav .social-nav * {
+  transition: all 0.4s ease;
+}
+header .header-container nav .social-nav *:hover {
+  transform: translateY(-5px);
+  color: #ffa343;
+  cursor: pointer;
+}
+header .header-container nav .social-nav span {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+header .header-container nav .social-nav i {
+  font-size: 1.3rem;
+}
+header .header-container nav .social-nav #close-res-nav {
+  display: none;
+}
+header .header-container #open-res-nav {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  header {
+    position: static;
+  }
+  header .header-container nav {
+    padding: 1.5rem;
+    width: 50%;
+    min-height: 100vh;
+    min-width: 220px;
+    max-width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 111;
+    transform: translate(500px, 0px);
+    background: rgb(255, 163, 67);
+    background: linear-gradient(31deg, rgba(255, 163, 67, 0.9360994398) 29%, rgba(0, 0, 0, 0.9360994398) 29%);
+    flex-direction: column;
+  }
+  header .header-container nav .list-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3rem 0rem;
+  }
+  header .header-container nav .social-nav {
+    align-items: start;
+    margin-left: 0 !important;
+  }
+  header .header-container nav .social-nav * {
+    color: #000000;
+  }
+  header .header-container nav .social-nav *:hover {
+    color: #ffffff;
+  }
+  header .header-container nav .social-nav #close-res-nav {
+    display: block;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 3rem;
+  }
+  header .header-container #open-res-nav {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=main.css.map */

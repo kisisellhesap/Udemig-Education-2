@@ -1,0 +1,64 @@
+@import "./general_variables";
+
+.contact-wrapper {
+  @extend %container-fluid;
+  .contact-container {
+    @extend %container;
+    width: 90% !important;
+    display: flex;
+    gap: 2rem;
+    img {
+      width: 50%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .contact-form-info {
+      width: 50%;
+      @extend %d-flex-column;
+      gap: 1rem;
+      .form-item {
+        @extend %d-flex-column;
+        gap: 0.5rem;
+
+        label {
+          color: $white;
+
+          width: max-content;
+        }
+        input,
+        textarea {
+          outline: none;
+
+          padding: 0.5rem;
+          border-radius: 5px;
+          resize: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-wrapper {
+    .contact-container {
+      width: 70% !important;
+      flex-direction: column;
+      img {
+        width: 100% !important;
+      }
+
+      .contact-form-info {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .contact-wrapper {
+    .contact-container {
+      width: 90% !important;
+    }
+  }
+}
